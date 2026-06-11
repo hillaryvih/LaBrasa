@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labrasa &amp; Pasta</title>
+  <!-- Favicon PNG — melhor suporte a tamanhos grandes -->
+  <link rel="icon" type="image/png" sizes="128x128" href="La Brasa (1).png" />
+  <link rel="shortcut icon" href="La Brasa (1).png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="main-header">
+  <div class="header-inner">
+    <a href="#" class="header-logo" id="logo-home" aria-label="La Brasa &amp; Pasta - Voltar ao início">
+      <img src="La Brasa (1).png" alt="Logo Labrasa &amp; Pasta" class="logo-img" />
+      <span class="logo-text">La Brasa <span class="amp">&amp;</span> Pasta</span>
+    </a>
+    <div class="header-right">
+      <div class="header-contact">
+        <a href="tel:+5569993840508" class="contact-item"><span class="contact-icon">📞</span><span class="contact-val">(69) 99384-0508</span></a>
+        <a href="mailto:contato@labrasaepasta.com.br" class="contact-item"><span class="contact-icon">✉</span><span class="contact-val">contato@labrasaepasta.com.br</span></a>
+      </div>
+      <div class="lang-selector" id="lang-selector">
+        <button class="lang-btn" id="lang-btn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag" id="lang-flag">🇧🇷</span>
+          <span class="lang-label" id="lang-label">Português</span>
+          <span class="lang-arrow">▾</span>
+        </button>
+        <ul class="lang-dropdown" id="lang-dropdown" role="listbox">
+          <li role="option" data-lang="pt" data-flag="🇧🇷"><span>🇧🇷</span> Português</li>
+          <li role="option" data-lang="en" data-flag="🇺🇸"><span>🇺🇸</span> English</li>
+          <li role="option" data-lang="es" data-flag="🇪🇸"><span>🇪🇸</span> Español</li>
+          <li role="option" data-lang="it" data-flag="🇮🇹"><span>🇮🇹</span> Italiano</li>
+          <li role="option" data-lang="fr" data-flag="🇫🇷"><span>🇫🇷</span> Français</li>
+        </ul>
+      </div>
+      <button class="cart-btn" id="cart-btn" aria-label="Abrir carrinho">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="main-nav" id="main-nav">
+    <a href="#section-pizzas"       class="nav-link" data-i18n="nav_pizza">Pizza</a>
+    <a href="#section-massas"       class="nav-link" data-i18n="nav_massa">Massas</a>
+    <a href="#section-hamburgueres" class="nav-link" data-i18n="nav_hamburguer">Hambúrgueres</a>
+    <a href="#section-bebidas"      class="nav-link" data-i18n="nav_bebida">Bebidas</a>
+  </nav>
+</header>
+
+<!-- ===== HERO — VÍDEOS ===== -->
+<!-- ===== HERO — FOTOS ===== -->
+<section class="hero-videos" id="hero">
+  <div class="hero-grid">
+
+    <div class="hero-video-wrap" data-target="section-hamburgueres">
+      <img class="hero-vid" src="IMG/img_lanndingpage/hamburguerloud.jpg"
+           alt="Hambúrgueres" loading="eager" />
+      <div class="hero-gradient"></div>
+      <span class="hero-vid-label" data-i18n="nav_hamburguer">Hambúrgueres</span>
+    </div>
+
+    <div class="hero-video-wrap" data-target="section-pizzas">
+      <img class="hero-vid" src="IMG/img_lanndingpage/pizzaloud.jpg"
+           alt="Pizza" loading="eager" />
+      <div class="hero-gradient"></div>
+      <span class="hero-vid-label" data-i18n="nav_pizza">Pizza</span>
+    </div>
+
+    <div class="hero-video-wrap" data-target="section-massas">
+      <img class="hero-vid" src="IMG/img_lanndingpage/massaloud.jpg"
+           alt="Massas" loading="eager" />
+      <div class="hero-gradient"></div>
+      <span class="hero-vid-label" data-i18n="nav_massa">Massas</span>
+    </div>
+
+    <div class="hero-video-wrap" data-target="section-bebidas">
+      <img class="hero-vid" src="IMG/img_lanndingpage/refriloud.jpg"
+           alt="Bebidas" loading="eager" />
+      <div class="hero-gradient"></div>
+      <span class="hero-vid-label" data-i18n="nav_bebida">Bebidas</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== HORÁRIO ===== -->
+<div class="horario-bar">
+  <span class="horario-icon">🕕</span>
+  <span data-i18n="horario">Aberto de segunda a sábado, das 18h às 00h30</span>
+</div>
+
+<!-- ===== SEÇÃO PIZZAS ===== -->
+<section class="product-section" id="section-pizzas">
+  <div class="section-banner">
+    <img src="IMG/img_lanndingpage/pizzaloud.jpg" alt="Pizza" class="section-banner-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <div class="section-banner-placeholder" style="display:none"><span>🍕</span></div>
+    <h2 class="section-title" data-i18n="nav_pizza">Pizza</h2>
+  </div>
+  <div class="size-grid" id="pizza-sizes"></div>
+</section>
+
+<!-- ===== SEÇÃO MASSAS ===== -->
+<section class="product-section" id="section-massas">
+  <div class="section-banner">
+    <img src="IMG/img_lanndingpage/massaloud.jpg" alt="Massas" class="section-banner-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <div class="section-banner-placeholder" style="display:none"><span>🍝</span></div>
+    <h2 class="section-title" data-i18n="nav_massa">Massas</h2>
+  </div>
+  <div class="flavor-grid" id="massa-list"></div>
+</section>
+
+<!-- ===== SEÇÃO HAMBÚRGUERES ===== -->
+<section class="product-section" id="section-hamburgueres">
+  <div class="section-banner">
+    <img src="IMG/img_lanndingpage/hamburguerloud.jpg" alt="Hambúrgueres" class="section-banner-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <div class="section-banner-placeholder" style="display:none"><span>🍔</span></div>
+    <h2 class="section-title" data-i18n="nav_hamburguer">Hambúrgueres</h2>
+  </div>
+  <div class="flavor-grid" id="hamburguer-list"></div>
+</section>
+
+<!-- ===== SEÇÃO BEBIDAS ===== -->
+<section class="product-section" id="section-bebidas">
+  <div class="section-banner">
+    <img src="IMG/img_lanndingpage/refrigerantes.jpg" alt="Bebidas" class="section-banner-img"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <div class="section-banner-placeholder" style="display:none"><span>🥤</span></div>
+    <h2 class="section-title" data-i18n="nav_bebida">Bebidas</h2>
+  </div>
+  <div class="flavor-grid" id="bebida-list"></div>
+</section>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="La Brasa (1).png" alt="Logo" class="footer-logo-img" />
+      <p class="footer-name">Labrasa <span class="amp">&amp;</span> Pasta</p>
+      <p class="footer-cnpj">CNPJ: 00.000.000/0001-00</p>
+      <p class="footer-copy">© 2026 Labrasa &amp; Pasta. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
+    </div>
+    <div class="footer-dev">
+      <p><strong data-i18n="footer_dev">Desenvolvido por</strong> Hillary</p>
+      <p class="footer-contact-dev">
+        <span data-i18n="footer_contact">Contato:</span>
+       <a href="https://wa.me/5569993840508?text=Olá,%20vim%20pelo%20seu%20site!">
+  (69) 99384-0508
+</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== CARRINHO LATERAL ===== -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho">
+  <!-- wrapper centraliza o conteúdo na tela cheia -->
+  <div class="cart-inner-wrap">
+    <div class="cart-header">
+      <h3 data-i18n="cart_title">Seu Pedido</h3>
+      <button class="cart-close" id="cart-close" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty" data-i18n="cart_empty">Seu carrinho está vazio.</p>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span data-i18n="cart_total">Total</span>
+        <span id="cart-total-val">R$ 0,00</span>
+      </div>
+      <button class="btn-primary btn-full" id="btn-finalizar" data-i18n="cart_checkout">Finalizar Pedido</button>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== MODAL PRODUTO (tela cheia) ===== -->
+<div class="modal-overlay" id="modal-overlay"></div>
+<div class="modal-fullscreen" id="modal-fullscreen" role="dialog" aria-modal="true">
+  <button class="modal-close-top" id="modal-close" aria-label="Fechar">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="modal-body" id="modal-content"></div>
+</div>
+
+<!-- ===== MODAL CHECKOUT ===== -->
+<div class="checkout-overlay" id="checkout-overlay"></div>
+<div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true">
+  <button class="modal-close-top" id="checkout-close" aria-label="Fechar">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="checkout-content" id="checkout-content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
