@@ -6,14 +6,14 @@
    1. IMAGENS & VÍDEOS — CONFIGURE AQUI
    ============================================= */
 const MEDIA = {
-  pizza_p:  'IMG/PIZZA/pizza.p.jpg',
-  pizza_m:  'IMG/PIZZA/pizza.m.jpg',
-  pizza_g:  'IMG/PIZZA/pizza.g.jpg',
-  pizza_gg: 'IMG/PIZZA/pizza.gg.jpg',
+  pizza_p:  'IMG/PIZZA/pizza.P.jpg',
+  pizza_m:  'IMG/PIZZA/pizza.M.jpg',
+  pizza_g:  'IMG/PIZZA/pizza.G.jpg',
+  pizza_gg: 'IMG/PIZZA/pizza.GG.jpg',
 
   carbonara:   'IMG/massa/massa.spaghettcarbonara.jpg',
   ravioli:     'IMG/massa/massa.raviolidequeijo.jpg',
-  gnocchi:     'IMG/massa/mass.gnocchi.jpg',
+  gnocchi:     'IMG/massa/mass.Gnocchi.jpg',
   fettuccini:  'IMG/massa/massa.fettutinealmare.jpg',
   lasanha_bol: 'IMG/massa/massa.lasanhabolonhesa.jpg',
   lasanha_frg: 'IMG/massa/massa.lasanhadefrango.jpg',
